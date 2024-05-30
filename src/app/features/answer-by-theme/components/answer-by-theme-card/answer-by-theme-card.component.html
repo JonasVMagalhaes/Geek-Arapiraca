@@ -1,13 +1,8 @@
-<div class="scene">
-  <div #cube class="cube">
-    <div class="cube__face cube__face--front">front</div>
-    <div class="cube__face cube__face--back">back</div>
-    <div class="cube__face cube__face--right">right</div>
-    <div class="cube__face cube__face--left">left</div>
-    <div class="cube__face cube__face--top">top</div>
-    <div class="cube__face cube__face--bottom">bottom</div>
-  </div>
-</div>
+<app-cube [manager]="cardManager"></app-cube>
 
-<button (click)="teste()">Clique-me</button>
-<button (click)="teste2()">Clique-me2</button>
+<button (click)="cardManager.face.rotateToFront()">toFront</button>
+<button (click)="cardManager.face.rotateToBack()">toBack</button>
+<button (click)="cardManager.face.rotateToLeft()">toLeft</button>
+<button (click)="cardManager.face.rotateToRight()">toRight</button>
+<button (click)="cardManager.face.rotateToTop()">toTop</button>
+<button (click)="cardManager.face.rotateToBottom()">toBottom</button>
