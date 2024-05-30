@@ -1,0 +1,17 @@
+$quantity-cards: 25;
+$quantity_columns: sqrt($quantity-cards);
+$quantity_rows: sqrt($quantity-cards);
+$container-spacing: 5px;
+$aspect-ratio-square: 1/1;
+
+.container {
+    aspect-ratio: $aspect-ratio-square;
+    border: 1px solid #ddd;
+    display: grid;
+    padding: $container-spacing;
+    grid-template-columns: repeat($quantity_columns, calc(100% / $quantity_columns));
+    grid-template-rows: repeat($quantity_rows, calc(100% / $quantity_rows));
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}

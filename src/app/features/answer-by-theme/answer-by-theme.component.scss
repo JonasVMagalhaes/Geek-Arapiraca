@@ -1,0 +1,11 @@
+$height-container: 90vh;
+
+.container {
+    display: flex;
+    justify-content: center;
+
+    height: $height-container;
+    width: 100%;
+
+    margin: calc((100vh - $height-container) / 2) 0;
+}
