@@ -8,6 +8,7 @@ $aspect-ratio-square: 1/1;
     aspect-ratio: $aspect-ratio-square;
     border: 1px solid #ddd;
     display: grid;
+    gap: $container-spacing;
     padding: $container-spacing;
     grid-template-columns: repeat($quantity_columns, calc(100% / $quantity_columns));
     grid-template-rows: repeat($quantity_rows, calc(100% / $quantity_rows));

@@ -12,6 +12,7 @@ import { tap } from 'rxjs';
 })
 export class CubeComponent implements AfterViewInit {
   @Input({ required: true }) manager: CubeManager;
+
   @ViewChild('cube') cube: ElementRef;
 
   ngAfterViewInit() {

@@ -1,29 +1,29 @@
 <div class="scene">
-    <div #cube class="cube">
-      <div class="cube__face cube__face--front"
-        [style.backgroundColor]="manager.color.front">
-        <ng-content #front></ng-content>      
-      </div>
-      <div class="cube__face cube__face--back"
-        [style.backgroundColor]="manager.color.back">
-        <ng-content #back></ng-content>    
-      </div>
-      <div class="cube__face cube__face--right"
-        [style.backgroundColor]="manager.color.right">
-        <ng-content #right></ng-content>    
-      </div>
-      <div class="cube__face cube__face--left"
-        [style.backgroundColor]="manager.color.left">
-        <ng-content #left></ng-content>    
-      </div>
-      <div class="cube__face cube__face--top"
-        [style.backgroundColor]="manager.color.top">
-        <ng-content #top></ng-content>    
-      </div>
-      <div class="cube__face cube__face--bottom"
-        [style.backgroundColor]="manager.color.bottom">
-        <ng-content #bottom></ng-content>    
-      </div>
+  <div #cube class="cube">
+    <div class="cube__face cube__face--front"
+      [style.backgroundColor]="manager.color.front">
+      <ng-content #front></ng-content>      
+    </div>
+    <div class="cube__face cube__face--back"
+      [style.backgroundColor]="manager.color.back">
+      <ng-content #back></ng-content>    
+    </div>
+    <div class="cube__face cube__face--right"
+      [style.backgroundColor]="manager.color.right">
+      <ng-content #right></ng-content>    
+    </div>
+    <div class="cube__face cube__face--left"
+      [style.backgroundColor]="manager.color.left">
+      <ng-content #left></ng-content>    
+    </div>
+    <div class="cube__face cube__face--top"
+      [style.backgroundColor]="manager.color.top">
+      <ng-content #top></ng-content>    
+    </div>
+    <div class="cube__face cube__face--bottom"
+      [style.backgroundColor]="manager.color.bottom">
+      <ng-content #bottom></ng-content>    
     </div>
   </div>
+</div>
   
